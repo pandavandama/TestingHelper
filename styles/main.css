@@ -1,0 +1,71 @@
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #1f365a;
+}
+.logo{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+}
+.burger{
+    margin: 20px;
+    position: absolute;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+   
+}
+.line{
+    
+    transform: rotate(90deg);
+    margin: 15px 0 0 0;
+    transition: all 0.6s ease;
+    
+
+}
+.top-line::before{
+    transition: all 0.6s ease;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    display: block;
+    background: tomato;
+    content: "";
+    height: 5px;
+}
+.middle-line::before{
+    transition: all 0.6s ease;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    display: block;
+    background: tomato;
+    content: "";
+    height: 5px;
+}
+.bottom-line::before{
+    transition: all 0.6s ease;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    display: block;
+    background: tomato  ;
+    content: "";
+    height: 5px;
+}
+.top-line-off::before{
+    transition: all 0.6s ease;
+    transform: rotate(45deg);
+    margin-top: 35px;
+}
+.bottom-line-off::before{
+    transition: all 0.6s ease;
+    transform: rotate(135deg);
+    margin-top: -40px;
+}
+.middle-line-off::before{
+    transition: all 0.6s ease;
+    opacity: 0;
+}
