@@ -11,8 +11,10 @@ header{
     height: fit-content;
     padding: 20px;
     margin: 0 auto;
+    z-index: 100;
 }
 .burger{
+    z-index: 100;
     margin: 20px;
     position: absolute;
     cursor: pointer;
@@ -33,7 +35,7 @@ header{
     border-radius: 2px;
     
     display: block;
-    background: tomato;
+    background: #85191b;
     content: "";
     height: 5px;
 }
@@ -42,7 +44,7 @@ header{
     border-radius: 2px;
     
     display: block;
-    background: tomato;
+    background: #85191b;
     content: "";
     height: 5px;
 }
@@ -51,7 +53,7 @@ header{
     border-radius: 2px;
     
     display: block;
-    background: tomato  ;
+    background: #85191b  ;
     content: "";
     height: 5px;
 }
@@ -68,4 +70,38 @@ header{
 .middle-line-off::before{
     transition: all 0.6s ease;
     opacity: 0;
+}
+.navbar{
+    
+    transition: all 0.6s ease;
+    top: 0;
+    left: -300px;
+    display: block;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #1f365a;
+    opacity: 0.8;
+    z-index: 30;
+}
+.navbar_element_container{
+    overflow-y: hidden;
+}
+.nav_element{
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    background: #85191b;
+    transition: all 0.6s ease;
+}
+.nav_element:hover{
+    background: #1f365a;
+}
+.nav_element_p{
+    color: white;
+    z-index: 10;
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
